@@ -14,7 +14,7 @@
     "aos": "^2.3.4",
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
-    "firebase": "^12.5.0",
+    "firebase": "^12.7.0",
     "framer-motion": "^12.23.24",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.552.0",

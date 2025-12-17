@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Root from '../Root/Root';
-import Home from '../pages/Home/Home';
-import ErrorPage from '../pages/Error/ErrorPage';
-
-
+import Root from "../Root/Root";
+import Home from "../pages/Home/Home";
+import ErrorPage from "../pages/Error/ErrorPage";
+import Registration from "../pages/Auth/Registration";
+import Login from "../pages/Auth/Login";
 
 export const router = createBrowserRouter([
   {
@@ -13,10 +13,20 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: "/",
         index: true,
         Component: Home,
       },
-    ]
+      // Auth Routes
+      {
+        path: "/register",
+        Component: Registration,
+      },
+      {
+        path: "/login",
+        Component: Login,
+      },
+    ],
   },
+  // Top level routes here
 ]);

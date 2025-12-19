@@ -93,7 +93,7 @@ const Registration = () => {
       const selectedDistrict = districts.find((d) => d.id === data.district);
       const districtName = selectedDistrict
         ? selectedDistrict.name
-        : data.district; // fallback
+        : data.district;
 
       const registrationData = {
         name: data.name,

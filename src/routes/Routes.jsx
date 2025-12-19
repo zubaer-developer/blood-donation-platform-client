@@ -7,6 +7,7 @@ import Registration from "../pages/Auth/Registration";
 import Login from "../pages/Auth/Login";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../layouts/Dashboard";
+import DonorProfile from "../pages/Dashboard/Donor/DonorProfile";
 
 export const router = createBrowserRouter([
   {
@@ -35,10 +36,19 @@ export const router = createBrowserRouter([
   {
     path: "dashboard",
     element: (
-      <PrivateRoute>
-        <Dashboard />
-      </PrivateRoute>
+      //<PrivateRoute>
+      <Dashboard />
+      //</PrivateRoute>
     ),
-    children: [],
+    children: [
+      {
+        path: "profile",
+        element: <DonorProfile />,
+      },
+      {
+        index: true,
+        element: <DonorProfile />,
+      },
+    ],
   },
 ]);

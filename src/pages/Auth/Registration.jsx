@@ -99,6 +99,7 @@ const Registration = () => {
         name: data.name,
         email: data.email,
         password: data.password,
+        confirm_password: data.confirm_password,
         avatar: avatarUrl,
         bloodGroup: data.bloodGroup,
         district: districtName,
